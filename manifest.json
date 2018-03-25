@@ -1,0 +1,44 @@
+{
+  "name": "Mindfully",
+  "version": "1.0",
+  "manifest_version": 2,
+
+  "description": "A Google Chrome Extension centered around environmental cost",
+  "icons": {
+    "16": "images/mindfullyjustlogo.png",
+    "32": "images/mindfullyjustlogo.png",
+    "48": "images/mindfullyjustlogo.png",
+    "128": "images/mindfullyjustlogo.png"
+  },
+
+  "browser_action": {
+    "default_title": "Have you thought about your environmental impact today?",
+    "default_popup": "popup.html",
+    "default_icon": "images/mindfullyjustlogo.png"
+  },
+
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "contextMenus",
+    "tabs",
+    "declarativeContent",
+    "storage",
+    "tabs",
+    "activeTab",
+    "background"
+  ],
+
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content_script.js"]
+    }
+  ]
+}
