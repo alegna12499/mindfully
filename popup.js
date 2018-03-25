@@ -1,6 +1,6 @@
 chrome.runtime.onMessage.addListener(function(response, sender, sendResponse) {
     var sampleItem = response;
-    var category1 = "plastic", category2 = "foam", category3 = "paper", category4 = "coffee";
+    var category1 = "paper", category2 = "foam", category3 = "plastic", category4 = "coffee";
 
     if(sampleItem.contains(category1)){
         change1 = ".55 gallons of water / plate";
