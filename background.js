@@ -9,6 +9,14 @@ chrome.runtime.onInstalled.addListener(function () {
     });
 });
 
-chrome.runtime.onMessage.addListener(function(response, sender, sendResponse) {
-    chrome.runtime.sendMessage(response);
-});
+// chrome.runtime.onMessage.addListener(function(response, sender, sendResponse) {
+//     chrome.runtime.sendMessage(response);
+// });
+
+// chrome.extension.onConnect.addListener(function(port) {
+//     port.onMessage.addListener(function(msg) {
+//         port.postMessage(msg);
+//     });
+// })
+
+chrome.runtime.sendMessage(document.body.getElementsByClassName("pageHeading")[1].innerHTML);
