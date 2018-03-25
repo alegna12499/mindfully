@@ -3,8 +3,8 @@ chrome.runtime.onMessage.addListener(function(response, sender, sendResponse) {
     var category1 = "plastic", category2 = "foam", category3 = "paper", category4 = "coffee";
 
     if(sampleItem.contains(category1)){
-        change1 = "test1";
-        change2 = "test1";
+        change1 = ".55 gallons of water / plate";
+        change2 = "Can't be recycled :-(";
         change3 = "test2";
         change4 = "test3";
     } else if (sampleItem.contains(category2)) {
@@ -25,9 +25,9 @@ chrome.runtime.onMessage.addListener(function(response, sender, sendResponse) {
     }
 
     document.getElementById("water").innerHTML = change1;
-    document.getElementById("air").innerHTML = change2;
+    document.getElementById("environmental").innerHTML = change2;
     document.getElementById("labor").innerHTML = change3;
     document.getElementById("transparency").innerHTML = change4;
-
+     document.getElementById("").innerHTML = change5;
 });
 
