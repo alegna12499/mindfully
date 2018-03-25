@@ -4,7 +4,7 @@ chrome.runtime.onMessage.addListener(function(response, sender, sendResponse) {
     var category1 = "plastic", category2 = "foam", category3 = "paper", category4 = "coffee";
 
     if(sampleItem.contains(category1)){
-        change1 = "test";
+        change1 = "test1";
         change2 = "test1";
         change3 = "test2";
         change4 = "test3";
