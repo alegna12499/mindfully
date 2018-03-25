@@ -12,15 +12,3 @@ chrome.runtime.onInstalled.addListener(function () {
 chrome.runtime.onMessage.addListener(function(response, sender, sendResponse) {
     chrome.runtime.sendMessage(response);
 });
-
-//for sending a message
-chrome.runtime.sendMessage({greeting: "hello"}, function(response) {
-
-});
-
-//for listening any message which comes from runtime
-chrome.runtime.onMessage.addListener(messageReceived);
-
-function messageReceived(msg) {
-    // Do your work here
-}
