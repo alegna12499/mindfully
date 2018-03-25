@@ -1,5 +1,4 @@
 chrome.runtime.onMessage.addListener(function(response, sender, sendResponse) {
-    alert(response);
     var sampleItem = response;
     var category1 = "plastic", category2 = "foam", category3 = "paper", category4 = "coffee";
 
