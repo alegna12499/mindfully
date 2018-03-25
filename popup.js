@@ -1,10 +1,10 @@
 chrome.runtime.onMessage.addListener(function(response, sender, sendResponse) {
-    var sampleItem = response;
+    var sampleItem = msg;
     var category1 = "paper", category2 = "foam", category3 = "plastic", category4 = "coffee";
 
     if(sampleItem.contains(category1)){
         change1 = ".55 gallons of water / plate";
-        change2 = "Can't be recycled :-(";=
+        change2 = "Can't be recycled :-(";
         change3 = "Biogrades in composting facility in 12 weeks, Toxic chemicals: Dioxins and Polystyrene";
         change4 = "Unknown contact https://www.gp.com/about-us/media-contacts";
         change5 = "http://www.shopfoodex.com/chinet-classic-white-dinner-plates-count-p-27448.html";
